@@ -1,11 +1,13 @@
-import './App.css'
+import './css/App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Main from './components/Main'
 
 function App() {
 
   return (
-      <p>
-       Hello
-      </p>
+      <div className='app'>
+        <Main/>
+      </div>
   )
 }
 
