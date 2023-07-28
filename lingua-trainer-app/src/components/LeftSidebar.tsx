@@ -14,7 +14,7 @@ const LeftSibar: React.FunctionComponent<ILeftSibarProps> = (props) => {
         <h5 className="name">Rose Mary</h5>
       </div>
       <div className="main">
-        <h5>Challenges</h5>
+        <h3>Challenges</h3>
         <ul>
           <li>
             <a href="#" className='active'>Speak with Native Speaker</a>
@@ -28,7 +28,7 @@ const LeftSibar: React.FunctionComponent<ILeftSibarProps> = (props) => {
         </ul>
       </div>
       <div className="footer">
-        <h5>Contact</h5>
+        <h3>Contact</h3>
       </div>
     </>
   );

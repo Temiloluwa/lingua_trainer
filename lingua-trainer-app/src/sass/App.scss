@@ -1,16 +1,21 @@
 
 // ----------------------- FONTS ----------------------------------------
-$sidebar-font-family: "Chinese Quotes", "Inter var", "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; // Font family for the sidebar
-$main-font-family: 'Roboto', sans-serif; // Font family for the main center column
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400&family=Poppins:wght@200;400&display=swap');
+
+$sidebar-font-family:  "DM Sans", "Poppins", Helvetica;
+$main-font-family: 'DM Sans', sans-serif; // Font family for the main center column
+$app-title-font-family: "Poppins", sans-serif; // Font family for th
 
 // ----------------------COLORS------------------------------------------
-$sidebar-divider: rgb(157, 157, 157);
+$sidebar-divider: rgb(193, 193, 193);
 $sidebar-color-bg: #f9f7f7; // Sidebar background color
 $sidebar-color-txt-headers: #333; // Dark grey font color for the headers
 $sidebar-color-txt-links: #6f6f6f; // Dark grey font color for the links
-$siderbar-color-selected:rgb(130, 0, 150);
+$strong-blue: #007bff;
+$siderbar-color-selected: $strong-blue;
 $main-font-color: #555; // Light grey font color for the main center column
 $main-divider: rgb(231, 230, 230);
+
 
 
 
@@ -27,7 +32,7 @@ body {
   color: $sidebar-color-txt-links;  
   min-height: 100vh;
 
-  h5 {
+  h1, h2, h3, h4, h5, h6{
     margin-top: 15px;
     margin-bottom: 30px;
     color: $sidebar-color-txt-headers;
@@ -113,12 +118,32 @@ body {
 .main-content {
   .navbar-custom {
     height: 100px;
-    text-align: center;
     margin: 50px 50px;
     border-bottom: 1px solid $main-divider;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px; /* Add padding to the header container */
 
-    h3 {
-      font-weight: bold;
+    .flag {
+      height: auto;
+      width: 50px;
+    }
+
+    .header-left {
+      display: flex; /* Create a flex container for the header text and image */
+      align-items: center;
+      img {
+        width: 50px; /* Set the width of the image */
+        height: auto;
+        margin-right: 20px;
+        border: 1px solid rgba(0, 0, 255, 0.703);
+      }
+    }
+
+    h1, h2, h3, h4, h5, h6{
+       font-family: $app-title-font-family;
+       font-weight: 200;
     }   
   }
 

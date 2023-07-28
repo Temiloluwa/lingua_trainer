@@ -1,14 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400&family=Poppins:wght@200;400&display=swap");
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "DM Sans", sans-serif;
   color: #555; }
 
 .left-sidebar {
   background-color: #f9f7f7;
-  font-family: "Chinese Quotes", "Inter var", "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "DM Sans", "Poppins", Helvetica;
   font-size: 95%;
   color: #6f6f6f;
   min-height: 100vh; }
-  .left-sidebar h5 {
+  .left-sidebar h1, .left-sidebar h2, .left-sidebar h3, .left-sidebar h4, .left-sidebar h5, .left-sidebar h6 {
     margin-top: 15px;
     margin-bottom: 30px;
     color: #333; }
@@ -48,7 +49,7 @@ body {
   .left-sidebar .main {
     padding: 20px;
     height: 50%;
-    border-top: 1px solid #9d9d9d;
+    border-top: 1px solid #c1c1c1;
     text-align: left; }
     .left-sidebar .main ul {
       list-style: none;
@@ -66,17 +67,17 @@ body {
       .left-sidebar .main li a:hover {
         color: white;
         /* Selected text color */
-        border-color: #820096;
+        border-color: #007bff;
         /* Selected border color */
-        background-color: #820096; }
+        background-color: #007bff; }
       .left-sidebar .main li a.active {
-        color: #820096; }
+        color: #007bff; }
   .left-sidebar .footer {
     padding: 20px;
     height: 10%;
     flex-grow: 1;
     /* Take up remaining available space */
-    border-top: 1px solid #9d9d9d; }
+    border-top: 1px solid #c1c1c1; }
 
 .right-sidebar {
   background-color: #f9f7f7;
@@ -84,11 +85,29 @@ body {
 
 .main-content .navbar-custom {
   height: 100px;
-  text-align: center;
   margin: 50px 50px;
-  border-bottom: 1px solid #e7e6e6; }
-  .main-content .navbar-custom h3 {
-    font-weight: bold; }
+  border-bottom: 1px solid #e7e6e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  /* Add padding to the header container */ }
+  .main-content .navbar-custom .flag {
+    height: auto;
+    width: 50px; }
+  .main-content .navbar-custom .header-left {
+    display: flex;
+    /* Create a flex container for the header text and image */
+    align-items: center; }
+    .main-content .navbar-custom .header-left img {
+      width: 50px;
+      /* Set the width of the image */
+      height: auto;
+      margin-right: 20px;
+      border: 1px solid rgba(0, 0, 255, 0.703); }
+  .main-content .navbar-custom h1, .main-content .navbar-custom h2, .main-content .navbar-custom h3, .main-content .navbar-custom h4, .main-content .navbar-custom h5, .main-content .navbar-custom h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200; }
 
 .main-content .chat-container {
   margin: 50px 50px; }
