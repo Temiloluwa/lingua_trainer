@@ -1,5 +1,7 @@
 import * as React from 'react';
 import avatarImg from '../assets/img/profile/sample-avatar.webp';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCubesStacked, faRoad, faFilm } from '@fortawesome/free-solid-svg-icons'
 
 interface ILeftSibarProps {
 }
@@ -17,12 +19,15 @@ const LeftSibar: React.FunctionComponent<ILeftSibarProps> = (props) => {
         <h3>Challenges</h3>
         <ul>
           <li>
+          <FontAwesomeIcon icon={faCubesStacked} className='challenge-icon'/>
             <a href="#" className='active'>Speak with Native Speaker</a>
           </li>
           <li>
+            <FontAwesomeIcon icon={faRoad} className='challenge-icon' />
             <a href="#">Vocabulary trainer</a>
           </li>
           <li>
+            <FontAwesomeIcon icon={faFilm} className='challenge-icon' />
             <a href="#">Watch German Movie</a>
           </li>
         </ul>

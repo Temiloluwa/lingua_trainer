@@ -3,6 +3,20 @@ body {
   font-family: "DM Sans", sans-serif;
   color: #555; }
 
+.left-sidebar, .right-sidebar {
+  overflow-y: auto; }
+
+.left-sidebar .sidebar-content,
+.right-sidebar .sidebar-content {
+  position: sticky;
+  /* Keep the content fixed within the sidebar */
+  top: 0;
+  /* Stick to the top of the sidebar */
+  bottom: 0;
+  /* Stick to the bottom of the sidebar */
+  padding: 20px;
+  /* Add some padding to the sidebar content */ }
+
 .left-sidebar {
   background-color: #f9f7f7;
   font-family: "DM Sans", "Poppins", Helvetica;
@@ -55,23 +69,28 @@ body {
       list-style: none;
       padding: 0;
       margin: 0; }
-    .left-sidebar .main li a {
-      display: block;
-      padding: 5px 5px;
-      color: #6f6f6f;
-      text-decoration: none;
-      border: 1px solid transparent;
-      /* To create space for the blue border when selected */
-      border-radius: 5px;
-      transition: background-color 0.3s, color 0.3s, border-color 0.3s; }
-      .left-sidebar .main li a:hover {
-        color: white;
-        /* Selected text color */
-        border-color: #007bff;
-        /* Selected border color */
-        background-color: #007bff; }
-      .left-sidebar .main li a.active {
-        color: #007bff; }
+    .left-sidebar .main li {
+      display: flex;
+      align-items: center; }
+      .left-sidebar .main li .challenge-icon {
+        margin-right: 10px; }
+      .left-sidebar .main li a {
+        display: block;
+        padding: 5px 5px;
+        color: #6f6f6f;
+        text-decoration: none;
+        border: 1px solid transparent;
+        /* To create space for the blue border when selected */
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s, border-color 0.3s; }
+        .left-sidebar .main li a:hover {
+          color: white;
+          /* Selected text color */
+          border-color: #007bff;
+          /* Selected border color */
+          background-color: #007bff; }
+        .left-sidebar .main li a.active {
+          color: #007bff; }
   .left-sidebar .footer {
     padding: 20px;
     height: 10%;
@@ -81,7 +100,28 @@ body {
 
 .right-sidebar {
   background-color: #f9f7f7;
-  min-height: 100vh; }
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  /* Center the content vertically */
+  flex-direction: column;
+  font-family: "DM Sans", "Poppins", Helvetica; }
+  .right-sidebar .empty {
+    height: 25%; }
+  .right-sidebar .title-container {
+    background-color: #ffcc00;
+    /* Set the background color for the title container */
+    text-align: center;
+    height: 60px;
+    width: 100%;
+    padding-top: 10px;
+    border-radius: 5px 5px 0 0; }
+  .right-sidebar .dynamic-rectangle {
+    background-color: #ffffff;
+    /* Set the background color for the dynamic rectangle */
+    padding: 20px;
+    min-height: 100px;
+    font-weight: 200; }
 
 .main-content .navbar-custom {
   height: 100px;

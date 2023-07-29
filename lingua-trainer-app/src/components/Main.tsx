@@ -17,11 +17,11 @@ const MainContent: React.FunctionComponent<IMainContentProps> = (props) => {
         <Col md={2} className='left-sidebar d-flex flex-column'>
           <LeftSibar />
         </Col>
-        <Col md={8} className='main-content d-flex flex-column p-0'>
+        <Col md={7} className='main-content d-flex flex-column p-0'>
           <Header/>
           <Content/>
         </Col>
-        <Col md={2} className='right-sidebar'>
+        <Col md={3} className='right-sidebar'>
           <RightSidebar />
         </Col>
       </Row>

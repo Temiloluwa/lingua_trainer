@@ -24,6 +24,17 @@ body {
   color: $main-font-color;
 }
 
+.left-sidebar, .right-sidebar {
+  overflow-y: auto; 
+}
+
+.left-sidebar .sidebar-content,
+.right-sidebar .sidebar-content {
+  position: sticky; /* Keep the content fixed within the sidebar */
+  top: 0; /* Stick to the top of the sidebar */
+  bottom: 0; /* Stick to the bottom of the sidebar */
+  padding: 20px; /* Add some padding to the sidebar content */
+}
 
 .left-sidebar {
   background-color: $sidebar-color-bg;
@@ -80,6 +91,13 @@ body {
     }
   
     li {
+      display: flex;
+      align-items: center;
+
+      .challenge-icon {
+        margin-right: 10px;
+      }
+
       a {
         display: block;
         padding: 5px 5px;
@@ -92,7 +110,7 @@ body {
         &:hover {
           color: white; /* Selected text color */
           border-color:  $siderbar-color-selected;/* Selected border color */
-          background-color: $siderbar-color-selected;;
+          background-color: $siderbar-color-selected;
         }
 
         &.active {
@@ -113,6 +131,31 @@ body {
 .right-sidebar {
   background-color: $sidebar-color-bg;
   min-height: 100vh;
+  display: flex;
+  align-items: center; /* Center the content vertically */
+  flex-direction: column;
+  font-family: $sidebar-font-family;
+
+  .empty {
+    height: 25%;
+  }
+
+
+  .title-container {
+    background-color: #ffcc00; /* Set the background color for the title container */
+    text-align: center;
+    height: 60px;
+    width: 100%;
+    padding-top: 10px;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .dynamic-rectangle {
+    background-color: #ffffff; /* Set the background color for the dynamic rectangle */
+    padding: 20px;
+    min-height: 100px;
+    font-weight: 200;
+  }
 }
 
 .main-content {
