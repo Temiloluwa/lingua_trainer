@@ -1,13 +1,14 @@
 from fastapi import APIRouter, HTTPException
 from typing import List, Dict
+from .models import UserProfile
 
-users = []
+users = {}
 
 router = APIRouter()
 
 # User Authentication and Authorization
 @router.post("/register")
-async def register_user(user: dict):
+async def register_user(user: UserProfile):
     """
     Register a new user account.
 
@@ -19,8 +20,10 @@ async def register_user(user: dict):
     """
     user_id = len(users) + 1
     users[user_id] = user
-    return {"message": "User registered successfully"}
-
+    return {
+                "message": "User registered successfully",
+                "user": user
+            }
 
 @router.post("/login")
 async def login(username: str, password: str):

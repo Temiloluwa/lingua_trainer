@@ -1,12 +1,13 @@
 from fastapi import APIRouter, HTTPException
 from typing import List, Dict
+from .models import UserProfile
 
 users = []
 router = APIRouter()
 
 
 @router.get("/profile/{user_id}")
-async def get_user_profile(user_id: int):
+async def get_user_profile(user_id: str):
     """
     Get user profile information.
 
@@ -26,7 +27,7 @@ async def get_user_profile(user_id: int):
 
 
 @router.put("/profile/{user_id}")
-async def update_user_profile(user_id: int, updated_profile: dict):
+async def update_user_profile(user_id: str, updated_profile: UserProfile):
     """
     Update user profile information.
 
@@ -41,7 +42,7 @@ async def update_user_profile(user_id: int, updated_profile: dict):
         HTTPException: If the user is not found.
     """
     if user_id in users:
-        users[user_id].update(updated_profile)
+        users[user_id] = updated_profile.dict()
         return {"message": "Profile updated successfully"}
     else:
         raise HTTPException(status_code=404, detail="User not found")
