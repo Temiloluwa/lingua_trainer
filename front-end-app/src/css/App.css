@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400&family=Poppins:wght@200;400&display=swap");
+body {
+  font-family: "DM Sans", sans-serif;
+  color: #555; }
+
+.left-sidebar, .right-sidebar {
+  overflow-y: auto; }
+
+.left-sidebar .sidebar-content,
+.right-sidebar .sidebar-content {
+  position: sticky;
+  /* Keep the content fixed within the sidebar */
+  top: 0;
+  /* Stick to the top of the sidebar */
+  bottom: 0;
+  /* Stick to the bottom of the sidebar */
+  padding: 20px;
+  /* Add some padding to the sidebar content */ }
+
+.left-sidebar {
+  background-color: #f9f7f7;
+  font-family: "DM Sans", "Poppins", Helvetica;
+  font-size: 95%;
+  color: #6f6f6f;
+  min-height: 100vh; }
+  .left-sidebar h1, .left-sidebar h2, .left-sidebar h3, .left-sidebar h4, .left-sidebar h5, .left-sidebar h6 {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: #333; }
+  .left-sidebar .header {
+    padding: 20px;
+    height: 25%;
+    /* Set the height to 20% */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center the content horizontally */
+    justify-content: center;
+    /* Center the content vertically */
+    padding-top: 20px;
+    /* Add spacing from the top */ }
+  .left-sidebar .sidebar-avatar-container {
+    width: 100px;
+    /* Set the width of the circular container */
+    height: 100px;
+    /* Set the height of the circular container */
+    border-radius: 50%;
+    /* Create a circular shape */
+    overflow: hidden;
+    /* Hide any content that goes beyond the circle */
+    margin-bottom: 10px;
+    /* Add spacing between the circle and the name */ }
+  .left-sidebar .sidebar-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure the avatar image covers the circular container */ }
+  .left-sidebar .name {
+    font-size: 18px;
+    /* Set the font size for the person's name */
+    font-weight: 500;
+    /* Make the name bold */ }
+  .left-sidebar .main {
+    padding: 20px;
+    height: 50%;
+    border-top: 1px solid #c1c1c1;
+    text-align: left; }
+    .left-sidebar .main ul {
+      list-style: none;
+      padding: 0;
+      margin: 0; }
+    .left-sidebar .main li {
+      display: flex;
+      align-items: center; }
+      .left-sidebar .main li .challenge-icon {
+        margin-right: 10px; }
+      .left-sidebar .main li a {
+        display: block;
+        padding: 5px 5px;
+        color: #6f6f6f;
+        text-decoration: none;
+        border: 1px solid transparent;
+        /* To create space for the blue border when selected */
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s, border-color 0.3s; }
+        .left-sidebar .main li a:hover {
+          color: white;
+          /* Selected text color */
+          border-color: #007bff;
+          /* Selected border color */
+          background-color: #007bff; }
+        .left-sidebar .main li a.active {
+          color: #007bff; }
+  .left-sidebar .footer {
+    padding: 20px;
+    height: 10%;
+    flex-grow: 1;
+    /* Take up remaining available space */
+    border-top: 1px solid #c1c1c1; }
+
+.right-sidebar {
+  background-color: #f9f7f7;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  /* Center the content vertically */
+  flex-direction: column;
+  font-family: "DM Sans", "Poppins", Helvetica; }
+  .right-sidebar .empty {
+    height: 25%; }
+  .right-sidebar .title-container {
+    background-color: #ffcc00;
+    /* Set the background color for the title container */
+    text-align: center;
+    height: 60px;
+    width: 100%;
+    padding-top: 10px;
+    border-radius: 5px 5px 0 0; }
+  .right-sidebar .dynamic-rectangle {
+    background-color: #ffffff;
+    /* Set the background color for the dynamic rectangle */
+    padding: 20px;
+    min-height: 100px;
+    font-weight: 200; }
+
+.main-content .navbar-custom {
+  height: 100px;
+  margin: 50px 50px;
+  border-bottom: 1px solid #e7e6e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  /* Add padding to the header container */ }
+  .main-content .navbar-custom .flag {
+    height: auto;
+    width: 50px; }
+  .main-content .navbar-custom .header-left {
+    display: flex;
+    /* Create a flex container for the header text and image */
+    align-items: center; }
+    .main-content .navbar-custom .header-left img {
+      width: 50px;
+      /* Set the width of the image */
+      height: auto;
+      margin-right: 20px;
+      border: 1px solid rgba(0, 0, 255, 0.703); }
+  .main-content .navbar-custom h1, .main-content .navbar-custom h2, .main-content .navbar-custom h3, .main-content .navbar-custom h4, .main-content .navbar-custom h5, .main-content .navbar-custom h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200; }
+
+.main-content .chat-container {
+  margin: 50px 50px; }
+  .main-content .chat-container .chat-message-left {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; }
+  .main-content .chat-container .chat-message-right {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+    /* Move the message bubble to the right side */ }
+  .main-content .chat-container .avatar-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* Circular shape for the avatar container */
+    overflow: hidden;
+    /* Hide any overflow to maintain the circle shape */
+    margin-right: 15px; }
+    .main-content .chat-container .avatar-container .right {
+      margin-left: 15px; }
+  .main-content .chat-container .avatar {
+    width: 100%;
+    /* Make the image fill the avatar container */
+    height: 100%;
+    /* Make the image fill the avatar container */
+    object-fit: cover;
+    /* Maintain the aspect ratio of the image */ }
+  .main-content .chat-container .message {
+    padding: 10px 15px;
+    /* Add padding inside the chat bubble */
+    border-radius: 20px;
+    /* Rounded corners for the chat bubble */
+    max-width: 40%;
+    /* Limit the width of the chat bubble */ }
+  .main-content .chat-container .chat-message-left .message {
+    background-color: #007bff;
+    color: white; }
+  .main-content .chat-container .chat-message-right .message {
+    background-color: #28a745;
+    color: white; }

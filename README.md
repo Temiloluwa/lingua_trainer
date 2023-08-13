@@ -1,6 +1,6 @@
 # lingua_trainer
 
-An assitant to help you learn a language
+An Assistant for Language Learning
 
 
 ## Create App

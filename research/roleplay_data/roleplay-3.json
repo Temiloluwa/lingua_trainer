@@ -1,0 +1,47 @@
+{
+    "theme": "forgiveness",
+    "actors": [
+        {
+            "name": "Lisa",
+            "role": "friend"
+        },
+        {
+            "name": "Zach",
+            "role": "friend"
+        }
+    ],
+    
+      "conversation": [
+        {
+          "call-target": "Du machst das toll! Bleib dran und gib nicht auf.",
+          "call": "You're doing great! Keep going and don't give up.",
+          "response-target": "Aber es ist schwer, ich kann nicht das Gleichgewicht halten.",
+          "response": "But it's hard, I can't keep the balance."
+        },
+        {
+          "call-target": "Das ist ganz normal am Anfang. Übung macht den Meister.",
+          "call": "That's completely normal at the beginning. Practice makes perfect.",
+          "response-target": "Aber ich habe Angst, dass ich falle.",
+          "response": "But I'm afraid of falling."
+        },
+        {
+          "call-target": "Ich bin hier, um dich zu unterstützen. Du wirst besser werden.",
+          "call": "I'm here to support you. You'll get better.",
+          "response-target": "Okay, ich versuche es noch einmal.",
+          "response": "Okay, I'll try again."
+        },
+        {
+          "call-target": "Genau! Du schaffst das. Schau geradeaus und halte das Lenkrad fest.",
+          "call": "Exactly! You can do it. Look straight ahead and hold the handlebar tight.",
+          "response-target": "Ich fahre ein bisschen besser jetzt!",
+          "response": "I'm riding a bit better now!"
+        },
+        {
+          "call-target": "Du machst Fortschritte! Bald wirst du wie ein Profi fahren.",
+          "call": "You're making progress! Soon you'll ride like a pro.",
+          "response-target": "Danke, dass du an mich geglaubt hast, Mama/Papa.",
+          "response": "Thank you for believing in me, Mom/Dad."
+        }
+      ]
+    
+}

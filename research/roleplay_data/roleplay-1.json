@@ -1,0 +1,45 @@
+{
+    "theme": "job-interview",
+    "actors": [
+        {
+            "name": "Mr. John",
+            "role": "interviewer"
+        },
+        {
+            "name": "Jane",
+            "role": "interviewee"
+        }
+    ],
+    "conversation": [
+        {
+            "call-target": "Guten Morgen! Herzlich willkommen zum Vorstellungsgespräch. Können Sie mir etwas über Ihre frühere Arbeitserfahrung erzählen?",
+            "call": "Good morning! Welcome to the interview. Can you tell me about your previous work experience?",
+            "response-target": "Guten Morgen! Vielen Dank. Ich habe drei Jahre Erfahrung in Projektmanagement und Teamführung.",
+            "response": "Good morning! Thank you. I have three years of experience in project management and team leadership."
+        },
+        {
+            "call-target": "Großartig! Wie gehen Sie mit herausfordernden Situationen und Arbeit unter Druck um?",
+            "call": "Great! How do you handle challenging situations and work under pressure?",
+            "response-target": "Ich bleibe ruhig, priorisiere Aufgaben und kommuniziere effektiv mit meinem Team, um Lösungen zu finden.",
+            "response": "I stay calm, prioritize tasks, and communicate effectively with my team to find solutions."
+        },
+        {
+            "call-target": "Gut zu wissen. Welche Stärken können Sie in unser Unternehmen einbringen?",
+            "call": "Good to know. What strengths can you bring to our company?",
+            "response-target": "Ich bin organisiert, anpassungsfähig und ein starker Teamplayer. Ich freue mich darauf, zum Erfolg des Unternehmens beizutragen.",
+            "response": "I am organized, adaptable, and a strong team player. I'm eager to contribute to the company's success."
+        },
+        {
+            "call-target": "Ausgezeichnet. Haben Sie Fragen an uns?",
+            "call": "Excellent. Do you have any questions for us?",
+            "response-target": "Ja, welche Weiterbildungsmöglichkeiten bietet das Unternehmen für seine Mitarbeiter?",
+            "response": "Yes, what growth opportunities does the company offer for its employees?"
+        },
+        {
+            "call": "Wir bieten verschiedene Schulungsprogramme und Karriereentwicklungsmöglichkeiten. Vielen Dank für Ihr Kommen heute!",
+            "call-target": "We provide various training programs and career development initiatives. Thank you for coming today!",
+            "response-target": "Vielen Dank für die Gelegenheit. Ich freue mich darauf, bald von Ihnen zu hören!",
+            "response": "Thank you for the opportunity. Looking forward to hearing from you soon!"
+        }
+    ]
+}
