@@ -96,7 +96,9 @@ db = client["language_tutor"]
 words_collection = db["words"]
 
 word_schema = {
+
     "word": {"type": "string", "required": True},
+    "user": {"type": "objectId", "required": True},
     "mutable": {
         "part_of_speech": {"type": "string"},
         "tense": {"type": "string"}
@@ -109,11 +111,10 @@ word_schema = {
     "createdAt": {"type": "datetime", "default": datetime.utcnow}
 }
 
-words_collection.create_index("word", unique=True)
-
+words_collection.create_index("user")
 ```
 
-4. **Challenges**
+4. **Challenge**
 
 ``` python
 
@@ -126,15 +127,42 @@ db = client["language_tutor"]
 challenges_collection = db["challenges"]
 
 challenge_schema = {
-    "tutor": {"type": "objectId", "required": True},
-    "student": {"type": "objectId", "required": True},
-    "questions": {"type": "array", "items": {"type": "objectId"}},
-    "feedback": {"type": "string"},
-    "createdAt": {"type": "datetime", "default": datetime.utcnow}
+    "name": {"type": "string", "required": True},  
+    "questions": [{
+        "word": {"type": "objectId", "required": True},  
+        "questionText": {"type": "string"} 
+    }]
 }
 
-challenges_collection.create_index("tutor")
-challenges_collection.create_index("student")
+challenges_collection.create_index("name")
+
+5. **ChallengeAttempt**
+
+``` python
+
+from pymongo import MongoClient
+from datetime import datetime
+
+client = MongoClient("mongodb://localhost:27017/")
+db = client["language_tutor"]
+
+challenge_attempts_collection = db["challenges_attempts"]
+
+challenge_attempt_schema = {
+    "word": {"type": "objectId", "required": True},
+    "user": {"type": "objectId", "required": True},
+    "attempts": [
+        {
+            "question": {"type": "string"},
+            "value": {"type": "string"},
+            "feedback": {"type": "string"}, 
+            "attemptedAt": {"type": "datetime", "default": datetime.utcnow}
+        }
+    ]
+}
+
+challenge_attempts_collection.create_index("user")
+
 
 ```
 
@@ -178,7 +206,7 @@ learning_progress_collection = db["learning_progress"]
 learning_progress_schema = {
     "user": {"type": "objectId", "required": True},
     "word": {"type": "objectId", "required": True},
-    "difficulty": {"type": "string"},
+    "learned": {"type": "boolean", "default": False},
     "createdAt": {"type": "datetime", "default": datetime.utcnow}
 }
 
