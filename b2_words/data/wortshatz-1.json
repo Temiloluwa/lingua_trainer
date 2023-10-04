@@ -1,0 +1,846 @@
+[
+    {
+        "überstanden": {
+            "english": ["endured"],
+            "sentences": [
+                "Das Winter überstanden.",
+                "Sie haben den Sturm überstanden.",
+                "Wir werden diese Krise überstehen.",
+                "Wenn ich den Marathon beendet habe, habe ich den Lauf überstanden.",
+                "Es wird erwartet, dass sie die Prüfung bestehen werden."
+            ],
+            "synonyms": {
+                "durchkommen": {
+                    "english": ["come through"],
+                    "sentences": [
+                        "Er kam durch die schwierige Prüfung.",
+                        "Die Mannschaft kam erfolgreich durch das Turnier.",
+                        "Wir müssen gemeinsam diese Herausforderung durchstehen."
+                    ],
+                    "synonyms": ["bestehen", "meistern"]
+                },
+                "durchziehen": {
+                    "english": ["pull through"],
+                    "sentences": [
+                        "Sie zog die Operation erfolgreich durch.",
+                        "Wenn wir zusammenhalten, können wir diese schwierige Zeit durchziehen."
+                    ],
+                    "synonyms": ["bewältigen", "überstehen"]
+                },
+                "überwinden": {
+                    "english": ["overcome"],
+                    "sentences": [
+                        "Sie hat ihre Angst überwunden.",
+                        "Gemeinsam können wir Hindernisse überwinden.",
+                        "Der Sieg über den Gegner wurde als große Leistung angesehen."
+                    ],
+                    "synonyms": ["besiegen", "bezwingen"]
+                }
+            }
+        }
+    },
+    {
+        "Zügig": {
+            "english": ["prompt"],
+            "sentences": [
+                "Bitte senden Sie die Informationen zügig.",
+                "Wir müssen die Aufgaben zügig erledigen, um den Zeitplan einzuhalten."
+            ],
+            "synonyms": {
+                "Schnell": {
+                    "english": ["fast"],
+                    "sentences": [
+                        "Der Zug ist sehr schnell gefahren.",
+                        "Er hat eine schnelle Antwort gegeben."
+                    ],
+                    "synonyms": ["rasch", "flink"]
+                }
+            }
+        }
+    },
+    {
+        "Triebstoff": {
+            "english": ["propellant"],
+            "sentences": [
+                "Der Raketenantrieb benötigt hochwertigen Triebstoff.",
+                "Ohne Treibstoff kann das Fahrzeug nicht fahren."
+            ],
+            "synonyms": {
+                "Kraftstoff": {
+                    "english": ["fuel"],
+                    "sentences": [
+                        "Das Auto benötigt regelmäßig Kraftstoff.",
+                        "Wir müssen den Kraftstofftank füllen."
+                    ],
+                    "synonyms": ["Benzin", "Treibstoff"]
+                }
+            }
+        }
+    },
+    {
+        "Angaben": {
+            "english": ["data"],
+            "sentences": [
+                "Die Angaben in diesem Bericht sind vertraulich.",
+                "Kannst du die neuesten Angaben über das Projekt teilen?"
+            ],
+            "synonyms": {
+                "Auskunft": {
+                    "english": ["information", "inquiry"],
+                    "sentences": [
+                        "Ich habe nach weiteren Auskünften gefragt.",
+                        "Können Sie mir weitere Informationen geben?"
+                    ],
+                    "synonyms": ["Informationen", "Erkundigung"]
+                },
+                "Data": {
+                    "english": ["data"],
+                    "sentences": [
+                        "Die Data-Analyse zeigt interessante Ergebnisse.",
+                        "Wir müssen die Data sorgfältig analysieren."
+                    ],
+                    "synonyms": ["Daten", "Informationen"]
+                }
+            }
+        }
+    },
+    {
+        "Mineralölkonzerne": {
+            "english": ["oil companies"],
+            "sentences": [
+                "Die Mineralölkonzerne haben ihre Gewinne gesteigert.",
+                "Die größten Mineralölkonzerne weltweit sind bekannt."
+            ],
+            "synonyms": {}
+        }
+    },
+    {
+        "Ausgaben": {
+            "english": ["expenditures"],
+            "sentences": [
+                "Die Ausgaben des Unternehmens müssen überprüft werden.",
+                "Die monatlichen Ausgaben sind höher als erwartet."
+            ],
+            "synonyms": {}
+        }
+    },
+    {
+        "Verbraucht": {
+            "english": ["consumed"],
+            "sentences": [
+                "Die Ressourcen wurden vollständig verbraucht.",
+                "Das Essen wurde schnell verbraucht."
+            ],
+            "synonyms": {}
+        }
+    },
+    {
+        "Rückgang": {
+            "english": ["decline"],
+            "sentences": [
+                "Der Rückgang der Wirtschaft beeinflusst die Arbeitslosigkeit.",
+                "Es gab einen deutlichen Rückgang der Verkaufszahlen."
+            ],
+            "synonyms": {
+                "Abnahme": {
+                    "english": ["decrease"],
+                    "sentences": [
+                        "Die Abnahme der Preise ist erfreulich für die Verbraucher.",
+                        "Wir beobachten eine stetige Abnahme der Anfragen."
+                    ],
+                    "synonyms": ["Verminderung", "Reduktion"]
+                },
+                "Verfall": {
+                    "english": ["decay"],
+                    "sentences": [
+                        "Der Verfall des alten Gebäudes ist nicht mehr aufzuhalten.",
+                        "Der Verfall der Qualität ist besorgniserregend."
+                    ],
+                    "synonyms": ["Zerfall", "Verschlechterung"]
+                }
+            }
+        }
+    },
+    {
+        "Rückgangig": {
+            "english": ["reversible"],
+            "sentences": [
+                "Die Entscheidung ist rückgängig gemacht worden.",
+                "Es ist schwer, diesen Schaden rückgängig zu machen."
+            ],
+            "synonyms": {
+                "Rücklaufig": {
+                    "english": ["regressive"],
+                    "sentences": [
+                        "Die rückläufige Entwicklung der Technologie überrascht viele.",
+                        "Die rückläufigen Trends in der Wirtschaft sind besorgniserregend."
+                    ],
+                    "synonyms": ["zurückgehend", "rückwärtsgerichtet"]
+                }
+            }
+        }
+    },
+    {
+        "Gegenüber": {
+            "english": ["opposite"],
+            "sentences": [
+                "Die Sonne ging im Westen unter, während der Mond im Osten aufging.",
+                "Die Meinungen der beiden Experten sind völlig entgegengesetzt."
+            ],
+            "synonyms": {
+                "im Vergleich zu": {
+                    "english": ["in comparison to"],
+                    "sentences": [
+                        "Im Vergleich zu anderen Städten ist diese besonders schön.",
+                        "Das neue Modell ist im Vergleich zum alten viel effizienter."
+                    ],
+                    "synonyms": ["gegenübergestellt mit", "verglichen mit"]
+                },
+                "Bezug": {
+                    "english": ["reference"],
+                    "sentences": [
+                        "Wir müssen uns auf die Daten im Bezug auf die Studie konzentrieren.",
+                        "Bitte nimm Bezug auf meinen vorherigen Bericht."
+                    ],
+                    "synonyms": ["Bezugnahme", "Hinweis"]
+                }
+            }
+        }
+    },
+    {
+        "Gedämpt": {
+            "english": ["subdued"],
+            "sentences": [
+                "Die gedämpfte Beleuchtung schafft eine gemütliche Atmosphäre.",
+                "Seine Stimme war gedämpft, als er von seinem Verlust sprach."
+            ],
+            "synonyms": {
+                "bedrückt": {
+                    "english": ["depressed"],
+                    "sentences": [
+                        "Sie fühlte sich bedrückt nach der Nachricht.",
+                        "Depression ist eine ernsthafte Form von bedrückter Stimmung."
+                    ],
+                    "synonyms": ["niedergeschlagen", "traurig"]
+                },
+                "gedeckt": {
+                    "english": ["covered"],
+                    "sentences": [
+                        "Das Auto war gedekt, um es vor Regen zu schützen.",
+                        "Die gedekte Option bietet finanzielle Sicherheit."
+                    ],
+                    "synonyms": ["geschützt", "verhüllt"]
+                }
+            }
+        }
+    },
+    {
+        "Besteuerung": {
+            "english": ["taxation"],
+            "sentences": [
+                "Die Besteuerung von Unternehmen ist ein komplexes Thema.",
+                "Die Besteuerung von Immobilien erfolgt auf der Grundlage des Werts."
+            ],
+            "synonyms": {
+                "Versteuerung": {
+                    "english": ["taxation"],
+                    "sentences": [
+                        "Die Versteuerung von Einkommen ist gesetzlich vorgeschrieben.",
+                        "Die Versteuerung von Waren kann den Preis erhöhen."
+                    ],
+                    "synonyms": ["Besteuerung", "Abgaben"]
+                },
+                "Steueren": {
+                    "english": ["tax"],
+                    "sentences": [
+                        "Die Steueren auf Tabak sind in den letzten Jahren gestiegen.",
+                        "Wir müssen die Steueren rechtzeitig bezahlen, um Strafen zu vermeiden."
+                    ],
+                    "synonyms": ["Abgaben", "Steuern"]
+                }
+            }
+        }
+    },
+    {
+        "Absatzes": {
+            "english": ["sales"],
+            "sentences": [
+                "Die Analyse des Absatzes zeigt ein positives Wachstum.",
+                "Das Marketingteam arbeitet an der Steigerung des Absatzes."
+            ],
+            "synonyms": {
+                "Vertrieb": {
+                    "english": ["distribution"],
+                    "sentences": [
+                        "Der Vertrieb unserer Produkte erfolgt weltweit.",
+                        "Das Unternehmen plant eine Verbesserung des Vertriebsnetzwerks."
+                    ],
+                    "synonyms": ["Verkauf", "Vermarktung"]
+                },
+                "Verkaufabteilung": {
+                    "english": ["sales department"],
+                    "sentences": [
+                        "Die Verkaufabteilung ist für den Umsatz verantwortlich.",
+                        "Die Verkaufabteilung hat ein neues Verkaufsziel festgelegt."
+                    ],
+                    "synonyms": ["Vertriebsabteilung", "Absatzabteilung"]
+                }
+            }
+        }
+    },
+    {
+        "Entgehen": {
+            "english": ["escape"],
+            "sentences": [
+                "Der Dieb konnte der Polizei entkommen.",
+                "Das Geheimnis ließ ihm nicht entgehen."
+            ],
+            "synonyms": {
+                "Entkommen": {
+                    "english": ["get away"],
+                    "sentences": [
+                        "Der Gefangene versuchte zu entkommen.",
+                        "Sie konnte knapp einem Unfall entkommen."
+                    ],
+                    "synonyms": ["fliehen", "entwischen"]
+                },
+                "Verpassen": {
+                    "english": ["miss"],
+                    "sentences": [
+                        "Ich habe den Bus verpasst.",
+                        "Du solltest diese Gelegenheit nicht verpassen."
+                    ],
+                    "synonyms": ["versäumen", "übersehen"]
+                }
+            }
+        }
+    },
+    {
+        "Vorgehen": {
+            "english": ["proceed"],
+            "sentences": [
+                "Bitte gehen Sie in der Prüfung genauso vor.",
+                "Das empfohlene Vorgehen ist in der Anleitung beschrieben."
+            ],
+            "synonyms": {}
+        }
+    },
+    {
+        "Erwähnt": {
+            "english": ["mentioned"],
+            "sentences": [
+                "Erwähnt wurde, dass es morgen regnen wird.",
+                "In dem Artikel wurde kein Name erwähnt."
+            ],
+            "synonyms": {}
+        }
+    },
+    {
+        "Ernte": {
+            "english": ["harvest"],
+            "sentences": [
+                "Die Ernte dieses Jahres war besonders reichlich.",
+                "Die Bauern begannen mit der Ernte der Felder."
+            ],
+            "synonyms": {
+                "Ertrag": {
+                    "english": ["yield"],
+                    "sentences": [
+                        "Der Ertrag der Pflanzen war beeindruckend.",
+                        "Wir erwarten einen hohen Ertrag in diesem Quartal."
+                    ],
+                    "synonyms": ["Ausbringen", "Produktion"]
+                }
+            }
+        }
+    },
+    {
+        "Abhalten": {
+            "english": ["prevent"],
+            "sentences": [
+                "Wir müssen Maßnahmen ergreifen, um Schäden abzuhalten.",
+                "Die Sicherheitsvorkehrungen sollen Unfälle abhalten."
+            ],
+            "synonyms": {
+                "verhindern": {
+                    "english": ["avoid"],
+                    "sentences": [
+                        "Versuchen Sie, Konflikte zu verhindern.",
+                        "Die Technologie kann Unfälle verhindern."
+                    ],
+                    "synonyms": ["abwenden", "vermeiden"]
+                },
+                "entmutigen": {
+                    "english": ["discourage"],
+                    "sentences": [
+                        "Lass dich nicht von Kritik entmutigen.",
+                        "Wir sollten die Mitarbeiter nicht entmutigen."
+                    ],
+                    "synonyms": ["abschrecken", "entnerven"]
+                }
+            }
+        }
+    },
+    {
+        "vertrieben": {
+            "english": ["expelled", "sold"],
+            "sentences": [
+                "Der Schüler wurde von der Schule vertrieben.",
+                "Die Produkte wurden erfolgreich verkauft."
+            ],
+            "synonyms": {
+                "austrieben": {
+                    "english": ["drive out", "expel", "drive away"],
+                    "sentences": [
+                        "Die Dämonen wurden aus dem Königreich ausgetrieben.",
+                        "Die unerwünschten Gäste wurden aus dem Haus vertrieben."
+                    ],
+                    "synonyms": ["vertreiben", "verjagen"]
+                },
+                "verkaufen": {
+                    "english": ["sell"],
+                    "sentences": [
+                        "Wir müssen die alten Möbel verkaufen.",
+                        "Das Unternehmen plant, sein Produkt im Ausland zu verkaufen."
+                    ],
+                    "synonyms": ["veräußern", "absetzen"]
+                }
+            }
+        }
+    },
+    {
+        "Vergeblich": {
+            "english": ["in vain", "futile"],
+            "sentences": [
+                "Seine Bemühungen waren vergeblich.",
+                "Das war ein vergeblicher Versuch."
+            ],
+            "synonyms": {}
+        }
+    },
+    {
+        "Wiedergeben": {
+            "english": ["reproduce"],
+            "sentences": [
+                "Die Maschine kann Musik perfekt wiedergeben.",
+                "Wiedergeben Sie den Text bitte im Originalton."
+            ],
+            "synonyms": {}
+        }
+    },
+    {
+        "Gefragte": {
+            "english": ["in demand"],
+            "sentences": [
+                "Berufe im Gesundheitswesen sind sehr gefragt.",
+                "Die gefragten Produkte sind oft ausverkauft."
+            ],
+            "synonyms": {}
+        }
+    },
+    {
+        "Anstieg": {
+            "english": ["rise"],
+            "sentences": [
+                "Der Anstieg der Temperaturen ist besorgniserregend.",
+                "Wir beobachten einen stetigen Anstieg der Preise."
+            ],
+            "synonyms": {
+                "Erhöhung": {
+                    "english": ["increase"],
+                    "sentences": [
+                        "Die Erhöhung der Gehälter wurde genehmigt.",
+                        "Eine Erhöhung der Produktivität ist notwendig."
+                    ],
+                    "synonyms": ["Steigerung", "Zunahme"]
+                },
+                "Aufstieg": {
+                    "english": ["rise"],
+                    "sentences": [
+                        "Sein Aufstieg in der Firma war beeindruckend.",
+                        "Der Aufstieg des Flugzeugs verlief reibungslos."
+                    ],
+                    "synonyms": ["Hochsteigen", "Emporsteigen"]
+                }
+            }
+        }
+    },
+    {
+        "Zunächst": {
+            "english": ["first", "let me"],
+            "sentences": [
+                "Zunächst möchte ich Ihnen für Ihre Mitarbeit danken.",
+                "Zunächst sollten wir die Grundlagen verstehen."
+            ],
+            "synonyms": {
+                "zunächst mal": {
+                    "english": ["first of all"],
+                    "sentences": [
+                        "Zunächst mal sollten wir uns kennenlernen.",
+                        "Zunächst mal müssen wir das Problem identifizieren."
+                    ],
+                    "synonyms": ["erst einmal", "anfangs"]
+                },
+                "vorest": {
+                    "english": ["for the moment", "for the time being"],
+                    "sentences": [
+                        "Vorerst können wir diese Entscheidung aufschieben.",
+                        "Für den Moment sollten wir abwarten."
+                    ],
+                    "synonyms": ["vorläufig", "temporär"]
+                }
+            }
+        }
+    },
+    {
+        "Verzeichnet": {
+            "english": ["recorded"],
+            "sentences": [
+                "Die Daten wurden korrekt verzeichnet.",
+                "Das Ereignis wurde im Tagebuch verzeichnet."
+            ],
+            "synonyms": {
+                "aufzeichnen": {
+                    "english": ["record"],
+                    "sentences": [
+                        "Bitte aufzeichnen, was gesagt wird.",
+                        "Die Überwachungskamera zeichnete alles auf."
+                    ],
+                    "synonyms": ["notieren", "festhalten"]
+                }
+            }
+        }
+    },
+    {
+        "verzichten": {
+            "english": ["abstain"],
+            "sentences": [
+                "Ich werde auf Alkohol verzichten.",
+                "Es ist ratsam, auf zu viel Zucker zu verzichten."
+            ],
+            "synonyms": {
+                "sich enthalten": {
+                    "english": ["refrain"],
+                    "sentences": [
+                        "Sie sollte sich bei dieser Diskussion enthalten.",
+                        "Es ist besser, sich zu enthalten, wenn man krank ist."
+                    ],
+                    "synonyms": ["verzicht", "vermieden"]
+                }
+            }
+        }
+    },
+    {
+        "entfalten": {
+            "english": ["unfold"],
+            "sentences": [
+                "Die Blumen entfalten ihre Pracht im Frühling.",
+                "Die Geschichte entfaltet sich langsam."
+            ],
+            "synonyms": {
+                "entwicklen": {
+                    "english": ["develop"],
+                    "sentences": [
+                        "Die Firma will neue Produkte entwickeln.",
+                        "Die Situation entwickelt sich positiv."
+                    ],
+                    "synonyms": ["aufbauen", "ausarbeiten"]
+                }
+            }
+        }
+    },
+    {
+        "auffällig": {
+            "english": ["noticeable"],
+            "sentences": [
+                "Die Veränderung in ihrem Verhalten war auffällig.",
+                "Das auffällige Muster auf dem Kleid zog viele Blicke auf sich."
+            ],
+            "synonyms": {
+                "ausgeprägt": {
+                    "english": ["pronounced"],
+                    "sentences": [
+                        "Ihr Akzent ist sehr ausgeprägt.",
+                        "Die Änderungen im Plan sind kaum zu übersehen."
+                    ],
+                    "synonyms": ["deutlich", "markant"]
+                },
+                "augenfällig": {
+                    "english": ["obvious"],
+                    "sentences": [
+                        "Die Antwort auf die Frage war augenfällig.",
+                        "Die Ursache des Problems ist augenfällig."
+                    ],
+                    "synonyms": ["offenkundig", "offensichtlich"]
+                }
+            }
+        }
+    },
+    {
+        "auffälligkeiten": {
+            "english": ["abnormalities"],
+            "sentences": [
+                "Die auffälligkeiten im Bericht müssen überprüft werden.",
+                "Es gibt einige auffälligkeiten in den Testergebnissen."
+            ],
+            "synonyms": {}
+        }
+    },
+    {
+        "Lenkrad": {
+            "english": ["steering wheel"],
+            "sentences": [
+                "Das Lenkrad des Autos ist gut in der Handhabung.",
+                "Der Fahrer drehte am Lenkrad, um die Richtung zu ändern."
+            ],
+            "synonyms": {}
+        }
+    },
+    {
+        "Beschlingt": {
+            "english": ["accelerated"],
+            "sentences": [
+                "Die Beschlingt des Fahrzeugs war beeindruckend.",
+                "Der Prozess wurde beschleunigt, um das Projekt abzuschließen."
+            ],
+            "synonyms": {}
+        }
+    },
+    {
+        "Bremst": {
+            "english": ["braked"],
+            "sentences": [
+                "Der Fahrer bremste das Auto abrupt ab.",
+                "Die Bremst des Zuges verursachte ein lautes Quietschen."
+            ],
+            "synonyms": {}
+        }
+    },
+    {
+        "Fordern": {
+            "english": ["demand"],
+            "sentences": [
+                "Die Gewerkschaft fordert höhere Löhne für die Arbeiter.",
+                "Wir sollten bessere Bedingungen fordern."
+            ],
+            "synonyms": {
+                "erfordern, bedürfen": {
+                    "english": ["require"],
+                    "sentences": [
+                        "Dieser Job erfordert viel Geduld.",
+                        "Die Anforderungen an das Projekt sind hoch."
+                    ],
+                    "synonyms": ["nötig haben", "verlangen"]
+                }
+            }
+        }
+    },
+    {
+        "Fördern": {
+            "english": ["promote"],
+            "sentences": [
+                "Das Unternehmen möchte junge Talente fördern.",
+                "Wir müssen Bildung fördern, um Fortschritt zu erzielen."
+            ],
+            "synonyms": {
+                "unterstützen": {
+                    "english": ["support"],
+                    "sentences": [
+                        "Die Organisation unterstützt gemeinnützige Projekte.",
+                        "Die Familie sollte sich gegenseitig unterstützen."
+                    ],
+                    "synonyms": ["befürworten", "helfen"]
+                },
+                "befördern": {
+                    "english": ["transport", "convey", "deliver"],
+                    "sentences": [
+                        "Das Transportunternehmen fördert Waren weltweit.",
+                        "Die Post wird täglich befördert."
+                    ],
+                    "synonyms": ["transportieren", "zustellen"]
+                }
+            }
+        }
+    },
+    {
+        "Aussichten": {
+            "english": ["outlook"],
+            "sentences": [
+                "Die Aussichten für die Wirtschaft sind positiv.",
+                "Er hat gute Aussichten auf eine Beförderung."
+            ],
+            "synonyms": {
+                "Ausblick": {
+                    "english": ["outlook", "prospects", "view"],
+                    "sentences": [
+                        "Der Ausblick von diesem Berg ist atemberaubend.",
+                        "Der Ausblick auf die Zukunft ist vielversprechend."
+                    ],
+                    "synonyms": ["Perspektive", "Sicht"]
+                }
+            }
+        }
+    },
+    {
+        "Ablenken": {
+            "english": ["distract"],
+            "sentences": [
+                "Er versuchte, sie abzulenken, damit sie nicht bemerkt.",
+                "Ablenken kann gefährlich sein, wenn man Auto fährt."
+            ],
+            "synonyms": {
+                "zerstreuen": {
+                    "english": ["divert"],
+                    "sentences": [
+                        "Versuche nicht, meine Gedanken zu zerstreuen.",
+                        "Das Spiel soll die Kinder zerstreuen."
+                    ],
+                    "synonyms": ["abwenden", "umleiten"]
+                }
+            }
+        }
+    },
+    {
+        "auftauchen": {
+            "english": ["appear"],
+            "sentences": [
+                "Die Sonne tauchte langsam am Horizont auf.",
+                "Das Problem tauchte unerwartet auf."
+            ],
+            "synonyms": {
+                "erscheinen, entstehen": {
+                    "english": ["come up"],
+                    "sentences": [
+                        "Die Frage tauchte während der Diskussion auf.",
+                        "Die Lösung wird sicherlich früher oder später auftauchen."
+                    ],
+                    "synonyms": ["auftreten", "sich ergeben"]
+                },
+                "aufkommen": {
+                    "english": ["come up"],
+                    "sentences": [
+                        "Die Idee kam plötzlich auf.",
+                        "Die Kosten können unerwartet aufkommen."
+                    ],
+                    "synonyms": ["entstehen", "sich entwickeln"]
+                }
+            }
+        }
+    },
+    {
+        "sich Hals über Kopf verlieben": {
+            "english": ["fall head over heels in love"],
+            "sentences": [
+                "Sie hat sich Hals über Kopf in ihn verliebt.",
+                "Man kann sich leicht Hals über Kopf verlieben."
+            ],
+            "synonyms": {}
+        }
+    },
+    {
+        "Entzünde": {
+            "english": ["ignite"],
+            "sentences": [
+                "Das Feuerzeug konnte das Feuer nicht entzünden.",
+                "Die Funken entzündeten das Benzin."
+            ],
+            "synonyms": {
+                "feuern": {
+                    "english": ["fire"],
+                    "sentences": [
+                        "Feuere das Grillholz an.",
+                        "Der Schuss feuerte in die Luft."
+                    ],
+                    "synonyms": ["anzünden", "entflammen"]
+                }
+            }
+        }
+    },
+    {
+        "Absichtlich": {
+            "english": ["intentionally"],
+            "sentences": [
+                "Er handelte absichtlich, um Aufmerksamkeit zu erregen.",
+                "Sie tat es nicht absichtlich."
+            ],
+            "synonyms": {
+                "bewusst": {
+                    "english": ["conscious"],
+                    "sentences": [
+                        "Sei dir bewusst, wie deine Worte wirken.",
+                        "Er handelte sehr bewusst."
+                    ],
+                    "synonyms": ["wissentlich", "absichtsvoll"]
+                }
+            }
+        }
+    },
+    {
+        "Unabsichtlich": {
+            "english": ["unintentional"],
+            "sentences": [
+                "Der Fehler war unabsichtlich.",
+                "Unabsichtlich habe ich deinen Kaffee getrunken."
+            ],
+            "synonyms": {}
+        }
+    },
+    {
+        "unsichtbar": {
+            "english": ["invisible"],
+            "sentences": [
+                "Das unsichtbare Monster jagte die Kinder.",
+                "Die unsichtbare Tinte wird nur unter UV-Licht sichtbar."
+            ],
+            "synonyms": {}
+        }
+    },
+    {
+        "Absehbar": {
+            "english": ["foreseeable"],
+            "sentences": [
+                "Die Konsequenzen waren nicht absehbar.",
+                "Ein Absehbarer Anstieg der Preise wurde erwartet."
+            ],
+            "synonyms": {}
+        }
+    },
+    {
+        "unwiderstehlichem": {
+            "english": ["irresistible"],
+            "sentences": [
+                "Der Duft des frisch gebackenen Brotes war unwiderstehlich.",
+                "Ihr Lächeln hatte eine unwiderstehliche Anziehungskraft."
+            ],
+            "synonyms": {
+                "zwingend": {
+                    "english": ["compelling"],
+                    "sentences": [
+                        "Die Beweise waren zwingend.",
+                        "Seine Argumente waren zwingend."
+                    ],
+                    "synonyms": ["überzeugend", "zwingend"]
+                }
+            }
+        }
+    },
+    {
+        "Übertreffen": {
+            "english": ["exceed"],
+            "sentences": [
+                "Die Ergebnisse haben unsere Erwartungen übertroffen.",
+                "Die Geschwindigkeit des Autos darf nicht übertroffen werden."
+            ],
+            "synonyms": {
+                "übersteigen": {
+                    "english": ["surpass"],
+                    "sentences": [
+                        "Das Talent des Künstlers übersteigt alle Erwartungen.",
+                        "Die Qualität des Produkts wird schwer zu übertreffen sein."
+                    ],
+                    "synonyms": ["übertreffen", "überbieten"]
+                }
+            }
+        }
+    }
+]
