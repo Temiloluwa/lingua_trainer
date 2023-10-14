@@ -6,6 +6,7 @@ naija_highlights/data/
 .idea/
 .ipynb_checkpoints/
 .env
+lt-backend-env/
 
 .installed.cfg
 bin
