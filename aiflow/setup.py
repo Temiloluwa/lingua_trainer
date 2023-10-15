@@ -4,7 +4,7 @@ with open("README.md", "r") as f:
     long_description = f.read()
 
 setup(
-    name="aiflow",
+    name="aiflow-prompter",
     version="0.1.0",
     description="A lightweight prompting library",
     long_description=long_description,
