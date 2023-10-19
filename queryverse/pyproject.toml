@@ -5,7 +5,7 @@ build-backend = "pdm.backend"
 
 [project]
 name = "queryverse"
-version = "0.1.0"
+version = "0.1.1"
 description = "A lightweight prompting library"
 authors = [
     {name = "temiloluwa", email = "temilolu74@gmail.com"},
