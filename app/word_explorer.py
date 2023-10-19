@@ -6,7 +6,7 @@ from queryverse.prompter import SystemPrompter, UserPrompter
 
 def get_llm(api_key: str, temperature: float=1) -> OpenAI:
     """Create llm object"""
-    gpt = OpenAI(api_key, temperature=temperature)
+    gpt = OpenAI(api_key=api_key, temperature=temperature)
 
     return gpt
 
