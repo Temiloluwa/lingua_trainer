@@ -1,7 +1,6 @@
 import os
 from dotenv import load_dotenv
-from aiflow.utils import ApiKeyNotFoundError
-
+from queryverse.utils import ApiKeyNotFoundError
 
 load_dotenv()
 

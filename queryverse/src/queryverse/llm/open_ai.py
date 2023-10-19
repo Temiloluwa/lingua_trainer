@@ -1,7 +1,7 @@
 import openai
 import os
-from aiflow.utils import ApiKeyNotFoundError, get_api_key
-from aiflow.llm import LLM
+from queryverse.utils import ApiKeyNotFoundError, get_api_key
+from queryverse.llm import LLM
 
 class OpenAI(LLM):
 
