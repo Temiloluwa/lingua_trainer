@@ -7,19 +7,20 @@ class OpenAI(LLM):
 
     def __init__(self, 
             model_name="gpt-3.5-turbo",
+            api_key=None,
             temperature=0):
         super(OpenAI, self).__init__()
         self._model_name = model_name
         self._temperature = temperature
-        self.load_api_key()
+        self.load_api_key(api_key)
 
         
-    def load_api_key(self):
+    def load_api_key(self, api_key):
         """ load api key """
         try:
-            openai.api_key = get_api_key()
+            openai.api_key = get_api_key(api_key)
         except ApiKeyNotFoundError as e:
-            print(f"No API key found: {e}")
+            raise e
 
     def create_llm(self):
         pass
