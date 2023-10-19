@@ -4,14 +4,14 @@ with open("README.md", "r") as f:
     long_description = f.read()
 
 setup(
-    name="aiflow",
+    name="queryverse",
     version="0.1.0",
     description="A lightweight prompting library",
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="temiloluwa adeoti",
     author_email="temilolu74@gmail.com",
-    url="https://github.com/temiloluwa/lingua_trainer/aiflow",
+    url="https://github.com/temiloluwa/lingua_trainer/queryverse",
     packages=find_packages(),
     classifiers=[
         "License :: OSI Approved :: MIT License",
@@ -21,5 +21,5 @@ setup(
     install_requires=[
         "openai"
     ],
-    python_requires=">=3.9",
+    python_requires=">=3.6",
 )
