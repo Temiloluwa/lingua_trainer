@@ -20,7 +20,7 @@ def json_parser(response: str) -> List[dict]:
     return data
 
 
-def word_explanator(german_word: str, llm: OpenAI = gpt) -> List[Dict[str, str]]:
+def word_explanator(german_word: str, llm: OpenAI) -> List[Dict[str, str]]:
     """
     Get an explanation and synonyms of a German word.
 
@@ -63,7 +63,7 @@ def word_explanator(german_word: str, llm: OpenAI = gpt) -> List[Dict[str, str]]
 
 
 
-def sentence_generator(german_word: str, number_of_sentences: int, llm: OpenAI=gpt) -> List[Dict[str, str]]:
+def sentence_generator(german_word: str, number_of_sentences: int, llm: OpenAI) -> List[Dict[str, str]]:
     """
     Generate sentences in German based on a given word.
 
