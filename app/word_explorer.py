@@ -4,7 +4,12 @@ from typing import List, Dict
 from queryverse.llm import OpenAI
 from queryverse.prompter import SystemPrompter, UserPrompter
 
-gpt = OpenAI(temperature=1)
+def get_llm(api_key: str, temperature: float=1) -> OpenAI:
+    """Create llm object"""
+    gpt = OpenAI(api_key, temperature=temperature)
+
+    return gpt
+
 
 def json_parser(response: str) -> List[dict]:
     """ parse json response """
@@ -107,11 +112,3 @@ def sentence_generator(german_word: str, number_of_sentences: int, llm: OpenAI=g
 
     generated_sentences = json_parser(response[0]['assistant'])
     return generated_sentences
-
-
-if __name__ == '__main__':
-    """Example"""
-    german_word = "schwer"
-    number_of_sentences = 3
-    print(word_explanator(german_word))
-    print(sentence_generator(german_word, number_of_sentences))
