@@ -153,32 +153,17 @@ def word_explainer(german_word: str, temperature: float) -> List[Dict[str, str]]
     return explanations_and_synonyms
 
 
-def sentence_generator(german_word: str, number_of_sentences: int, temperature: float) -> List[Dict[str, str]]:
+def sentence_generator(german_word: str, number_of_sentences: int, temperature: float):
     """
     Generate sentences in German based on a given word.
 
     Args:
     - german_word (str): The German word to base the generated sentences on.
     - number_of_sentences (int): The number of sentences to generate.
-    - llm (OpenAI, optional): An instance of the OpenAI language model (default: None).
+    - temperature: temperature for the model.
 
-    Returns:
-    List[Dict[str, str]]: A list of dictionaries containing contextual scenarios, German sentences,
-    and their English translations.
+    Returns: Generator
 
-    Each dictionary has the following keys:
-    - 'context' (str): A series of sentences in English describing a scenario for which the generated sentence is applicable.
-    - 'german sentence' (str): The sentence generated in German.
-    - 'english translation' (str): The direct translation of the generated sentence to English.
-
-    Example:
-    >>> german_word = "Haus"
-    >>> number_of_sentences = 2
-    >>> generated_sentences = json_parser(sentence_generator(german_word, number_of_sentences))
-    >>> for sentence in generated_sentences:
-    >>>     print(sentence['context'])
-    >>>     print("German: ", sentence['german sentence'])
-    >>>     print("English: ", sentence['english translation'])
     """
 
     system_prompt = SystemPrompter("You are a fluent German speaker that is great at following instructions.")
