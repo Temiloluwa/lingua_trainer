@@ -7,6 +7,8 @@ from typing import List, Dict
 from queryverse.llm import OpenAI
 from queryverse.prompter import SystemPrompter, UserPrompter
 
+# get path to .env file from environment variables
+ENV_FILE_PATH=os.environ.get('ENVFILE', '')
 
 def load_env_var(env_name: str = "OPENAI_API_KEY", 
                 env_path: str | None = None) -> str:
@@ -27,8 +29,7 @@ def load_env_var(env_name: str = "OPENAI_API_KEY",
     return env_var
 
 # set api key
-openai.api_key = load_env_var(env_path='/Users/t.adeoti/codes-and-scripts/projects/llm_apps/.env')
-
+openai.api_key = load_env_var(env_path=ENV_FILE_PATH)
 
 def json_parser(response: str) -> List[dict]:
     """ parse json response """
@@ -39,27 +40,76 @@ def json_parser(response: str) -> List[dict]:
     return data
 
 
-def format_string_to_json(input_string: str):
-    """Helper function to format string to json"""
-    input_string = input_string.strip(",\n{").strip("\n").strip("{").strip("}").strip("")
-    return json.dumps(json.loads("{" + input_string + "}"))
-    
+def extract_json_in_string(input_string: str) -> str | None:
+    """
+    Extracts JSON from a given string.
 
-def stream_examples(response, split_word: str):
-    """ Generator to stream individual examples """
-    joined_tokens = ''
+    Args:
+        input_string (str): The input string that may contain JSON data.
+
+    Returns:
+        str | None: If valid JSON is found in the input string, it is extracted,
+                    parsed, and returned as a string. If no JSON is found or if
+                    the JSON is invalid, None is returned.
+    """
+    pattern = r'\{[^{}]*\}'  # Pattern to detect JSON
+    match = re.search(pattern, input_string)
+    if match:
+        matched_text = match.group()
+        try:
+            # If a match is found, perform final verification with json.loads
+            # We do another json.dumps because we want a string output
+            json_string = json.dumps(json.loads(matched_text))
+        except json.JSONDecodeError:
+            json_string = None
+
+        return json_string
+    else:
+        return None
+
+
+def stream_json_examples(response):
+    """
+    Stream JSON Examples from a Generator of Byte Strings.
+
+    Args:
+        response (generator): A generator that yields byte strings.
+
+    Yields:
+        str: Valid JSON strings extracted from the accumulated chunks.
+    """
+    accumulated_chunk = ""
     for chunk in response:
         if 'assistant' not in chunk:
-            joined_tokens += chunk['no_role']
+            accumulated_chunk += chunk['no_role']
 
-        if split_word in joined_tokens:
-            yield_tokens, joined_tokens = joined_tokens.split(split_word)
-            yield format_string_to_json(yield_tokens)
+        if '{' in accumulated_chunk and '}' in accumulated_chunk:
+            parsed_json = extract_json_in_string(accumulated_chunk)
+
+            if parsed_json:
+                yield parsed_json
+                accumulated_chunk = ""
     else:
-        yield format_string_to_json(joined_tokens)
+        yield ""
 
 
-def word_explainer(german_word: str) -> List[Dict[str, str]]:
+def stream_tokens(response):
+    """
+    Stream a token at a time.
+
+    Args:
+        response (generator): A generator that yields byte strings.
+
+    Yields:
+        str: stream a token at a time
+    """
+    accumulated_chunk = ""
+    for chunk in response:
+        if 'assistant' not in chunk:
+            yield chunk['no_role']
+
+
+def word_explainer(german_word: str, temperature: float) -> List[Dict[str, str]]:
     """
     Get an explanation and synonyms of a German word.
 
@@ -96,14 +146,14 @@ def word_explainer(german_word: str) -> List[Dict[str, str]]:
     """)
 
     messages=[system_prompt(), user_prompt(word=german_word)]
-    response = OpenAI.prompt(messages, temperature=1, stream=False)
+    response = OpenAI.prompt(messages, temperature, stream=False)
     
     explanations_and_synonyms = json_parser(response['messages'][0]['assistant'])
     
     return explanations_and_synonyms
 
 
-def sentence_generator(german_word: str, number_of_sentences: int) -> List[Dict[str, str]]:
+def sentence_generator(german_word: str, number_of_sentences: int, temperature: float) -> List[Dict[str, str]]:
     """
     Generate sentences in German based on a given word.
 
@@ -133,21 +183,24 @@ def sentence_generator(german_word: str, number_of_sentences: int) -> List[Dict[
 
     system_prompt = SystemPrompter("You are a fluent German speaker that is great at following instructions.")
     user_prompt = UserPrompter("""
-        Given a German word, generate {num_sent} sentences with the word.
-        First provide a contextual scenario in English, then generate the sentence in German.
-        The sentences must vary in meaning, conjugated tense, tone (passive or active tone), and quantity (singular or plural) of the word.
-        Avoid using the praeteritum; instead, use partizip II.
-
-        Output Format (comma-separated JSON format):
-        
-        context: <A series of sentences in English describing a scenario for which the generated sentence is applicable>
-        german sentence: <A sentence that was generated based on the supplied German word>
-        english translation: <Direct translation of the generated sentence to English>
-
-        German Word: {word}
+        Generate sentences in German for a word. 
+        Each sentence should include an English contextual scenario followed by the corresponding German sentence.
+        Ensure that the sentences differ in meaning, and include varied conjugations for the verbs. 
+        Use partizip II instead of praeteritum. Additionally, vary the tense (present, past, future), tone (active or passive), and quantity (singular or plural) of the word.
+        [word]: Geehrte
+        [number of sentences]: 2
+        [context1]In a formal business letter, addressing a company's board of directors
+        [german1]Sehr geehrte Herren Vorstände, Ich möchte Ihnen mitteilen, dass unsere Firma im nächsten Quartal voraussichtlich eine Gewinnsteigerung verzeichnen wird.
+        [english1]Dear honored board members, I would like to inform you that our company is expected to experience an increase in profits in the next quarter.
+        [context2]At a prestigious awards ceremony, introducing a well-respected guest speaker.
+        [german2]Meine sehr geehrten Damen und Herren, It is my great honor to introduce to you Mr. Schmidt, who is renowned as an expert in the field of renewable energy.
+        [english2]Ladies and gentlemen, Es ist mir eine große Ehre, Ihnen Herrn Schmidt vorstellen zu dürfen, der als Experte auf dem Gebiet der erneuerbaren Energien gilt.
+        ##
+        [word]: "{word}"
+        [number of sentences]: {num_sent}
     """)
 
     messages=[system_prompt(), user_prompt(word=german_word, num_sent=number_of_sentences)]
-    response = OpenAI.prompt(messages, temperature=1, stream=True)
+    response = OpenAI.prompt(messages, temperature, stream=True, max_tokens=3500)
     
     return response
