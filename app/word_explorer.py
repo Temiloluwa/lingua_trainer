@@ -1,14 +1,11 @@
 import re
 import os
 import json
-import openai
 from dotenv import load_dotenv
 from typing import List, Dict
 from queryverse.llm import OpenAI
 from queryverse.prompter import SystemPrompter, UserPrompter
 
-# get path to .env file from environment variables
-ENV_FILE_PATH=os.environ.get('ENVFILE', '')
 
 def load_env_var(env_name: str = "OPENAI_API_KEY", 
                 env_path: str | None = None) -> str:
@@ -28,8 +25,6 @@ def load_env_var(env_name: str = "OPENAI_API_KEY",
     env_var = os.getenv(env_name, "")
     return env_var
 
-# set api key
-openai.api_key = load_env_var(env_path=ENV_FILE_PATH)
 
 def json_parser(response: str) -> List[dict]:
     """ parse json response """
