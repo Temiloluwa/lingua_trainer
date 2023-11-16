@@ -16,6 +16,22 @@ def json_parser(response: str) -> List[dict]:
     return data
 
 
+def stream_tokens(response):
+    """
+    Stream a token at a time.
+
+    Args:
+        response (generator): A generator that yields byte strings.
+
+    Yields:
+        str: stream a token at a time
+    """
+    accumulated_chunk = ""
+    for chunk in response:
+        if 'assistant' not in chunk:
+            yield chunk['no_role']
+            
+
 async def word_explainer(gpt: OpenAILLM, german_word: str, temperature: float) -> List[Dict[str, str]]:
     """
     Get an explanation and synonyms of a German word.
